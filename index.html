@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Minimax Simulator >> Tic-Tac-Toe</title>
+        
+        <link rel="stylesheet" href="mycss.css">        
+    </head>
+    
+    <body>
+        <p>
+            User is <b>X</b> and AI agent is <b>O</b>
+        </p>
+        
+        <table>
+            <tr>
+                <td><input type='button' id='00' onclick="clickme(0,0,'X')"></td>
+                <td><input type='button' id='01' onclick="clickme(0,1,'X')"></td>
+                <td><input type='button' id='02' onclick="clickme(0,2,'X')"></td>
+            </tr>
+            <tr>
+                <td><input type='button' id='10' onclick="clickme(1,0,'X')"></td>
+                <td><input type='button' id='11' onclick="clickme(1,1,'X')"></td>
+                <td><input type='button' id='12' onclick="clickme(1,2,'X')"></td>
+            </tr>
+            <tr>
+                <td><input type='button' id='20' onclick="clickme(2,0,'X')"></td>
+                <td><input type='button' id='21' onclick="clickme(2,1,'X')"></td>
+                <td><input type='button' id='22' onclick="clickme(2,2,'X')"></td>
+            </tr>
+        </table>
+        <b>Result: </b><span id='res'>Incomplete</span>
+        <br/>
+        <input type='button' value='Restart Game' onclick='window.location.reload();'>
+        
+        <script src='myjs.js'></script>
+    </body>
+</html>
